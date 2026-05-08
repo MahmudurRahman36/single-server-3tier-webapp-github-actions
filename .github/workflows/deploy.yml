@@ -48,8 +48,8 @@ jobs:
     - name: Configure SSH to skip host key checking
       run: |
         mkdir -p ~/.ssh
-        cat >> ~/.ssh/config <<EOF
-        Host ${{ secrets.EC2_HOST }}
+        cat > ~/.ssh/config <<EOF
+        Host *
           StrictHostKeyChecking no
           UserKnownHostsFile /dev/null
         EOF
