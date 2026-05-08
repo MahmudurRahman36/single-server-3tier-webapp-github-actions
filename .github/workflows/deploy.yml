@@ -27,6 +27,7 @@ env:
   DB_NAME: bmidb
   DB_USER: bmi_user
   NODE_VERSION: 'lts/*'
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   deploy:
